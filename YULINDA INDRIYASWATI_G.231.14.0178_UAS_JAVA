@@ -1,0 +1,47 @@
+Nama	: Yulinda Indriyaswati
+NIM	: G.231.14.0178
+
+
+
+1. Pada file HelloWorld.java muncul error
+	Script sebelumnya
+	- return new ModelAndView("welcome", "message", messages);
+	Pembenaran
+	- return new ModelAndView("welcome", "message", message);
+	
+2. Pada file index.jsp muncul warning
+	Script sebelumnya 
+	<a href="hello.html">Click here to see Welcome message</a><p>
+	Pembenaran
+	<a href="hello.html">Click here to see Welcome message</a>
+	
+3. Pada file web.xml
+	Script sebelumnya
+	<servlet-mapping>
+        <servlet-name>myspring</servlet-name>
+		<url-pattern>*.html</url-pattern>
+        <url-pattern>*.anything</url-pattern>
+	</servlet-mapping>
+	
+	Pembenaran
+	<servlet-mapping>
+        <servlet-name>my-spring</servlet-name>
+		<url-pattern>*.html</url-pattern>
+        <url-pattern>*.anything</url-pattern>
+	</servlet-mapping>
+	
+4. Pada file my-spring-servlet.xml
+	script sebelumnya
+	<context:component-scan base-package="com.tobuku" />
+	
+	Pembenaran
+	<context:component-scan base-package="com.tobuku.controller" />
+	
+5. Pada file my-spring-servlet.xml
+	Script sebelumnya
+	 <property name="suffix" value=".xml" />  
+	
+	pembenaran
+	 <property name="suffix" value=".jsp" />  
+	
+	
